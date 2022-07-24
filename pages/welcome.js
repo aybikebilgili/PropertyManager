@@ -69,19 +69,6 @@ export default class Welcome extends Component {
     this.setState({buKullaniciAdi: userName, userName: userName});
   }
 
-  // {
-  //   comment ? (
-  //     <View style={{flexDirection: 'row'}}>
-  //       <View style={{flex: 0.1}}>
-  //         <Icon name="person-circle-sharp"></Icon>
-  //       </View>
-  //       <View style={{flex: 0.9}}>
-  //         <TextInput></TextInput>
-  //       </View>
-  //     </View>
-  //   ) : null;
-  // }
-
   componentDidMount() {
     // firebase.messaging().onMessage(response => {
     //   console.log('notiiii', JSON.stringify(response));
@@ -118,29 +105,23 @@ export default class Welcome extends Component {
             <Button
               style={[styles.box, color1]}
               onPress={() => Actions.Managers()}>
-              {/* <Image source={money} style={styles.image} /> */}
               <View style={styles.boxView}>
                 <Text style={styles.boxText}>Managers</Text>
-                {/* <H1 style={styles.boxH1}>₺ {data[0].Value}</H1> */}
               </View>
             </Button>
             <Button
               icon={<Icon name="people" color={'white'} size={15} />}
               style={[styles.box, color3]}
               onPress={() => Actions.Residents()}>
-              {/* <Image source={wallet} style={styles.image} /> */}
               <View style={styles.boxView}>
                 <Text style={styles.boxText}>Residents</Text>
-                {/* <H1 style={styles.boxH1}>₺ {data[1].Value} </H1> */}
               </View>
             </Button>
             <Button
               style={[styles.box, color4]}
               onPress={() => Actions.Employees()}>
-              {/* <Image source={wallet} style={styles.image} /> */}
               <View style={styles.boxView}>
                 <Text style={styles.boxText}>Employees</Text>
-                {/*  <H1 style={styles.boxH1}>₺ {data[1].Value} </H1> */}
               </View>
             </Button>
           </ScrollView>
@@ -186,8 +167,3 @@ var color1 = {backgroundColor: 'rgba(100, 0, 100, 0.6)'};
 var color2 = {backgroundColor: '#5CB85C'};
 var color3 = {backgroundColor: 'rgba(255, 0, 0, 0.6)'};
 var color4 = {backgroundColor: 'rgba(0, 0, 100, 0.6)'};
-// var money = require('../images/money.png');
-// var wallet = require('../images/wallet.png');
-// var person = require('../images/person.png');
-// var calender = require('../images/calender.png');
-// var downArrow = require('../images/downArrow.png');

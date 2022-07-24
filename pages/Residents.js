@@ -142,17 +142,6 @@ export default class Residents extends Component {
       }),
     );
     console.log('users', users);
-
-    // const res = (await postRequest(body, define.Musteriler)).liste;
-    //     if (res === undefined) return;
-    //     this.setState({
-    //       musteriData: res,
-    //       musteriDataTmp: res.length == 0 ? [] : res,
-    //       musteriNo: musteriNo,
-    //       bayiID: bayiId,
-    //     });
-
-    //     console.log('Musteriler RES', res);
   }
 
   render() {

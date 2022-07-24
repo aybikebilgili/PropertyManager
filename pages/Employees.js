@@ -143,17 +143,6 @@ export default class Employees extends Component {
       }),
     );
     console.log('users', users);
-
-    // const res = (await postRequest(body, define.Musteriler)).liste;
-    //     if (res === undefined) return;
-    //     this.setState({
-    //       musteriData: res,
-    //       musteriDataTmp: res.length == 0 ? [] : res,
-    //       musteriNo: musteriNo,
-    //       bayiID: bayiId,
-    //     });
-
-    //     console.log('Musteriler RES', res);
   }
 
   async deleteRow(rowMap, rowKey) {
@@ -211,11 +200,7 @@ export default class Employees extends Component {
 
               borderBottomWidth: 1,
               borderBottomColor: '#dfdfdf',
-            }}
-            // onLongPress={() => {
-            //   Actions.Telefonlar({musteriData: data});
-            // }}
-          >
+            }}>
             <View style={{width: '60%', justifyContent: 'center'}}>
               <Text style={{paddingLeft: 20, paddingRight: 10, fontSize: 14}}>
                 {data.item.employeeName}
@@ -226,9 +211,7 @@ export default class Employees extends Component {
                 width: '40%',
                 justifyContent: 'center',
               }}>
-              <Text style={{alignSelf: 'flex-end'}}>
-                {/* {this.currencyFormat(data.item.Bakiye)} */}
-              </Text>
+              <Text style={{alignSelf: 'flex-end'}}></Text>
             </View>
           </View>
         </TouchableOpacity>

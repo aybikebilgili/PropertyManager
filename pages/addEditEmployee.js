@@ -92,25 +92,6 @@ export default class addEditEmployee extends Component {
     // console.log('BAŞARILI DÖNEN body', body);
     return;
 
-    //     let res = '';
-    //     if (this.props.tip == 'duzenle') {
-    //       console.log('düzenleme mod');
-    //       body.musteriId = this.props.kullaniciBilgiler.MusteriID;
-    //       res = await postRequest(body, define.MusteriDuzenleme);
-    //     } else if (this.props.tip == 'ekle') {
-    //       console.log('ekleme mod');
-    //       res = await postRequest(body, define.MusteriEkle);
-    //     }
-
-    //     if (res.result == '1') {
-    //       setTimeout(() => {
-    //         Actions.refresh({refresh: true});
-    //       }, 0);
-    //       Actions.pop();
-    //       console.log('BAŞARILI DÖNEN body', body);
-    //       return;
-    //     }
-
     //     console.log('HATA DÖNEN body', body);
     //     Alert.alert('Hata!', res.result);
   }

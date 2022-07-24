@@ -163,8 +163,6 @@ export default class addEditResident extends Component {
         this.setState({
           blockData: data,
           blockDataTmp: data.length == 0 ? [] : data,
-          // musteriNo: musteriNo,
-          // bayiID: bayiId,
         });
       }),
     );

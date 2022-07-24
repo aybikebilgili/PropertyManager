@@ -110,23 +110,10 @@ export default class Setting extends Component {
         this.setState({
           userData: managerData,
           userDataTmp: managerData.length == 0 ? [] : managerData,
-          // musteriNo: musteriNo,
-          // bayiID: bayiId,
         });
       }),
     );
     console.log('users', users);
-
-    // const res = (await postRequest(body, define.Musteriler)).liste;
-    //     if (res === undefined) return;
-    //     this.setState({
-    //       musteriData: res,
-    //       musteriDataTmp: res.length == 0 ? [] : res,
-    //       musteriNo: musteriNo,
-    //       bayiID: bayiId,
-    //     });
-
-    //     console.log('Musteriler RES', res);
   }
 
   render() {
@@ -173,34 +160,7 @@ export default class Setting extends Component {
               ],
               {cancelable: false},
             )
-          }
-
-          // onPress={() => {
-          //   this.props.settings.sepetMusteri = [];
-
-          //   this.props.settings.sepetMusteri.MusteriAdSoyad =
-          //     data.item.Ad + ' ' + data.item.Soyad;
-          //   this.props.settings.sepetMusteri.MusteriID = data.item.MusteriID;
-
-          //   this.props.satisTipi == 1
-          //     ? Actions.Satis({})
-          //     : this.props.satisTipi == 2
-          //     ? Actions.PaketGruplari({})
-          //     : /*      : this.props.settings.Yetkiler.PaketProgramEkleme == 'True'
-          //     ? this.setState({modalVisible: true})
-          //     : Alert.alert('Bilgi', 'Bu işlemi yapmaya yetkiniz yok');*/
-          //       this.setState({modalVisible: true});
-
-          //   this.setState({
-          //     secilenMusteriID: data.item.MusteriID,
-          //     secilenMusteriAdSoyad: data.item.Ad + ' ' + data.item.Soyad,
-          //   });
-          // }}
-
-          // onLongPress={() => {
-          //   Actions.Telefonlar({musteriData: data});
-          // }}
-        >
+          }>
           <View
             style={{
               backgroundColor: 'white',
@@ -212,11 +172,7 @@ export default class Setting extends Component {
 
               borderBottomWidth: 1,
               borderBottomColor: '#dfdfdf',
-            }}
-            // onLongPress={() => {
-            //   Actions.Telefonlar({musteriData: data});
-            // }}
-          >
+            }}>
             <View style={{width: '60%', justifyContent: 'center'}}>
               <Text style={{paddingLeft: 20, paddingRight: 10, fontSize: 14}}>
                 {data.item.nameSurname}
@@ -227,9 +183,7 @@ export default class Setting extends Component {
                 width: '40%',
                 justifyContent: 'center',
               }}>
-              <Text style={{alignSelf: 'flex-end'}}>
-                {/* {this.currencyFormat(data.item.Bakiye)} */}
-              </Text>
+              <Text style={{alignSelf: 'flex-end'}}></Text>
             </View>
           </View>
         </TouchableOpacity>
@@ -238,30 +192,6 @@ export default class Setting extends Component {
 
     const renderHiddenItem = (data, rowMap) => (
       <View style={styles.rowBack}>
-        {/* {this.state.isManager == 'true' && (
-          <TouchableOpacity
-            style={{backgroundColor: 'gray', width: 75}}
-            // onPress={() => this.edit(rowMap, data.item.MusteriID, data)}
-          >
-            <View
-              style={{
-                flex: 1,
-                backgroundColor: 'gray',
-                width: 75,
-                height: 75,
-                alignContent: 'center',
-                justifyContent: 'center',
-                alignSelf: 'center',
-                alignItems: 'center',
-              }}>
-              <Icon
-                style={{color: 'white', fontSize: 20}}
-                active
-                name="pencil"
-              />
-            </View>
-          </TouchableOpacity>
-        )} */}
         {this.state.isManager == 'true' && (
           <TouchableOpacity
             style={[styles.backRightBtn, styles.backRightBtnRight]}

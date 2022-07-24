@@ -1,0 +1,8 @@
+
+
+	BİTİRME TEZİ MOBİL PLANLAMASI
+	
+	Manager sayfasında delete methodu aslında silmeyecek. Sadece seçili olan user'ın isManager değerini "false" yapacak. Bu sayede seçili user sadece manager listesinden kalkmış olacak.
+Edit için ise ayrı sayfa olacak. (edit ve add aynı sayfa içinde)
+	Resident sayfası için ise delete methodu gerçekten seçili user'ı silecek ve o kullanıcı tüm listelerden kalkmış olacak.
+	Listelerde her hangi bir Row'a tıklandığında telefon no gösterilecek. (Bunun planlamasını yap. Modal veya farklı sayfa) 
